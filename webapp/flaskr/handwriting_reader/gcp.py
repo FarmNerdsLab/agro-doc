@@ -4,11 +4,11 @@ Wrapper around Google Cloud Vision's API
 Requires google cloud vision and google cloud SDK
 """
 from google.cloud import vision
-from ocr import OCR
+from handwriting_reader import HandwritingReader
 import os
 
 
-class GoogleCloudVisionOCR(OCR):
+class GoogleCloudVisionHR(HandwritingReader):
 
     def read_text(self, path):
         """Detects document features in an image."""
