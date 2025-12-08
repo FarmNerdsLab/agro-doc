@@ -12,7 +12,7 @@ Each week, the farmers would fill out a whiteboard with relevant information thr
 
 The workflow they adopted over time was to take a picture of the whiteboard as everyone was heading out Friday afternoon, and then come in on the weekends and manually enter in the values by zooming into the picture on their phone to read each cell.
 
-**Our goal is streamline this process by using modern technology such as Optical Character Recognition (OCR) with AI models to digitally translate their handwriting and automatically populate their spreadsheets.**
+**Our goal is to streamline this process by using modern technology such as Optical Character Recognition (OCR) with AI models to digitally translate their handwriting and automatically populate their spreadsheets.**
 
 ## Prerequisites
 
