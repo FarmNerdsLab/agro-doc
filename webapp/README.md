@@ -1,7 +1,24 @@
 # Webapp Directory
 [description place-holder]
 
-## Trying Different OCRs
+## Changelog: Trying Different OCRs
+Changelog of `agro-doc` webapp of refactoring the backend.
+
+### 21 November 2025
+FarmNerds lab meeting. Discussing status update post-LSD code-review.
+
+**TODOS:**
+* Implement feedback from DR from 11/17.
+* Re-work the interface with the handwriting reader to be one interface but still be able to switch out which model it uses on the back-end.
+* Set a timeline for when I will finish each of these tasks (New backend before end of semester is the goal)
+* Connect the pipeline: pipe the result from the `PaddleOCR` as input into the LLM 
+* Build out tests for that pipeline.
+
+**stretch goals:**
+* explore optimization--why does it take so long to do with CPU? My CPUs are good. Potentially explore hosting on the Jetson from Victoria's lab
+    * would require to upgrade `PaddleOCR` and `phi3` dependencies and/or configurations to use GPU
+
+
 
 ### 15 November 2025
 I am going to use the CPU version of [PaddleOCR](https://www.paddlepaddle.org.cn/en/install/quick?docurl=/documentation/docs/en/develop/install/pip/linux-pip_en.html)--for now pivoting away from Google Cloud Vision. In the future, I can refactor to use the GPU verson (CUDA 13.0) instead:
