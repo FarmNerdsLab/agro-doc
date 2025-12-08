@@ -23,16 +23,16 @@ Before getting started, you should have:
 - [Docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository) installed
 - [DevContainers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) in VSCode
 
-## Onboarding To-do List
+## Onboarding To-Do List
 
 ### Getting Started
 Before jumping into making new features and committing code to this project, complete the onboarding tutorials.
 
 1. **[Tutorial 1: Flask Quickstart](./tutorial-1-flask-quickstart.md)**  
-   Learn Flask fundamentals by completing the official Flask quickstart. By the end of this tutorial, you will have a foundation to understand this webapp architecture as it is (currently) heavily adapted from of the quickstart.
+   Learn Flask fundamentals by completing the official Flask quickstart. By the end of this tutorial, you will have a foundation to understand this webapp architecture as it is (currently) heavily adapted from the quickstart.
 
 2. **[Tutorial 2: Running Agro-Doc Locally](./tutorial-2-running-locally.md)**  
-   Set up your development environment, run the webapp using *devcontainers*, and make your first modifications.
+   Set up your development environment, run the webapp using *DevContainers*, and make your first modifications.
 
 ### Understanding the System
 To understand the overall system, see these documents linked below:

@@ -74,7 +74,7 @@ Converts handwritten documents into digital text. This is all done through API c
 ### 5. **LLM Text Refinement**
 Improves OCR output quality using language models.
 
-**Technology:** [Phi-3-mini-128k-instruct]  
+**Technology:** [Phi-3-mini-128k-instruct](https://huggingface.co/microsoft/phi-3-mini-128k-instruct)  
 **Responsibilities:**
 - Context-based word correction
 - Agricultural terminology recognition

@@ -2,7 +2,7 @@
 
 ## Overview
 
-Since much of the overall architecture of the codebase is adapted from the Flask quickstart guide tutorial, it'll be incredibly helpful to walkthrough it.
+Since much of the overall architecture of the codebase is adapted from the Flask quickstart guide tutorial, it'll be incredibly helpful to walk through it.
 
 ## Learning Objectives
 
@@ -61,7 +61,7 @@ Once you've completed the Flask tutorial, you'll notice that Agro-Doc follows a 
 The main difference is that Agro-Doc adds:
 - **Image upload and processing** (`gcp.py`)
 - **OCR handwriting recognition** (coming in Tutorial 2)
-- **LLM text refinement** (coming in Tutorial 2)
+- **LLM text refinement** (planned for a future tutorial)
 
 ## Next Steps
 
