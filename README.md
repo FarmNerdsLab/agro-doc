@@ -3,9 +3,10 @@ AgroDoc is an app that helps farmers input handwritten data into spreadsheets au
 
 [Notion Page for testing](https://www.notion.so/forthebirds/TrOCR-Testing-4a11aaf524f947c3b0069833b4bb462a)
 
+## Onboarding
+Onboarding onto this project requires taking some first-year programming course (such as SoftDes). [See this link here for **documentation** and **onboarding** guide](webapp/docs/README.md).
 
-
-## Launching the Webapp locally
+## Launching the Webapp Locally
 For local launching, here's the workflow I've used so far:
 
 After cloning the repository, `cd` into the `webapp` directory and run 
@@ -25,5 +26,6 @@ flask --app flaskr run
 ```
 to launch the app. 
 
-## Notes
-This prototype was adapted using the framework provided by the Flask quickstart, [Flaskr](https://flask.palletsprojects.com/en/stable/tutorial/database/)
+## Contributions
+Eddy Pan, Arianne Fong, Alessandra Ferzoco  
+This prototype was adapted using the framework provided by the Flask quickstart: [Flaskr](https://flask.palletsprojects.com/en/stable/tutorial/database/).
