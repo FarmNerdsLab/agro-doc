@@ -14,6 +14,9 @@ The workflow they adopted over time was to take a picture of the whiteboard as e
 
 **Our goal is to streamline this process by using modern technology such as Optical Character Recognition (OCR) with AI models to digitally translate their handwriting and automatically populate their spreadsheets.**
 
+To understand more about this project, view this **[powerpoint](https://olincollege-my.sharepoint.com/:p:/g/personal/aferzoco_olin_edu/IQC0S-yiZKwyRYxM_ZoOe9DFAVLi_DKldKnltiRpW4452FQ?e=rFfOPG)** from our talk at the Frontiers in Education (FIE) 2025 Conference.
+
+Long link: https://olincollege-my.sharepoint.com/:p:/g/personal/aferzoco_olin_edu/IQC0S-yiZKwyRYxM_ZoOe9DFAVLi_DKldKnltiRpW4452FQ?e=rFfOPG
 ## Prerequisites
 
 Before getting started, you should have:
@@ -51,16 +54,6 @@ To understand the overall system, see these documents linked below:
 ### Development Guides
 5. **[Development Workflow](./development-workflow.md)**  
    Best practices for developing and testing changes.
-
-6. **[Deployment Guide](./deployment.md)**  
-   How to deploy the application to production.
-
-### Reference
-7. **[API Reference](./api-reference.md)**  
-   Detailed API endpoints and usage.
-
-8. **[Troubleshooting](./troubleshooting.md)**  
-   Common issues and solutions.
 
 ## Quick Start
 
