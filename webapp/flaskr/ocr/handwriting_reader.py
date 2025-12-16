@@ -13,7 +13,7 @@ class OCRType(Enum):
     Enum for the type of OCR to use.
     """
 
-    GOOGLE_CLOUD_VISION = "google_cloud_vision"
+    GOOGLE_CLOUD_VISION = "google_cloud_vision"  # No longer in use as of 12-15-2025
     PADDLE = "paddle"
 
 
@@ -41,10 +41,10 @@ T = TypeVar('T', bound='HandwritingReader')
 class HandwritingReader(ABC):
     """
     Abstract base class for handwriting readers.
-    
+
     Implementations should override read_text() to return a ReadText object.
     """
-    
+
     @abstractmethod
     def read_text(self, path: str) -> ReadText:
         """
@@ -64,23 +64,32 @@ class HandwritingReaderFactory:
     """
     Factory class to create the appropriate HandwritingReader based on OCRType.
     """
-    
+
     @staticmethod
     def create(ocr_type: OCRType) -> HandwritingReader:
         """
         Creates and returns the appropriate HandwritingReader implementation.
-        
+
         Args:
             ocr_type: an OCRType enum value specifying the type of OCR to use.
-            
+
         Returns:
             An instance of the appropriate HandwritingReader subclass.
         """
         if ocr_type == OCRType.GOOGLE_CLOUD_VISION:
-            from .gcp_hw_reader import GoogleCloudVisionHR
+            from gcp_hw_reader import GoogleCloudVisionHR
             return GoogleCloudVisionHR()
         elif ocr_type == OCRType.PADDLE:
-            from .paddle_hw_reader import PaddleHandwritingReader
+            from paddle_hw_reader import PaddleHandwritingReader
             return PaddleHandwritingReader()
         else:
             raise ValueError(f"Unsupported OCR type: {ocr_type}")
+
+
+if __name__ == "__main__":
+    # Example usage
+    ocr_type = OCRType.PADDLE
+    reader = HandwritingReaderFactory.create(ocr_type)
+    text_data = reader.read_text(
+        "flaskr/static/uploads/images/pow_whiteboard.jpg")
+    print(text_data.text)
