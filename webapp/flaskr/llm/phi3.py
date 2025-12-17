@@ -26,7 +26,7 @@ class Phi3Wrapper:
         torch.random.manual_seed(0)
         self.model = AutoModelForCausalLM.from_pretrained(
             "microsoft/Phi-3-mini-128k-instruct",
-            device_map="cpu",  # use CPU for friendly-hosting
+            device_map="cpu",  # use GPU once integrated into the devcontainer
             torch_dtype="auto",
             trust_remote_code=True,
         )
@@ -40,6 +40,7 @@ class Phi3Wrapper:
             tokenizer=self.tokenizer,
         )
 
+        # TODO: tune these parameters
         self.generation_args = {
             "max_new_tokens": 500,
             "return_full_text": False,
@@ -71,11 +72,12 @@ class Phi3Wrapper:
             ocr_output (list): The raw OCR output as a list of results.
 
         Returns:
-            str: The cleaned text extracted from the OCR output.
+            str: The cleaned text extracted from the OCR output in JSON format.
         """
-        self.generate(PROMPT.append(
+        messages = PROMPT + [
             {"role": "user", "content": str(ocr_output)}
-        ))
+        ]
+        return self.generate(messages)
 
 
 if __name__ == "__main__":
