@@ -4,7 +4,7 @@ from werkzeug.utils import secure_filename
 from flaskr.auth import login_required
 from flaskr.db import get_db
 import os
-from flaskr.handwriting_reader.gcp_hw_reader import GoogleCloudVisionHR
+from flaskr.pipeline import OCRLLMPiepline
 
 handwriting_reader = GoogleCloudVisionHR()
 
