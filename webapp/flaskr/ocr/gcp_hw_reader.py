@@ -5,7 +5,7 @@ Requires google cloud vision and google cloud SDK
 """
 
 from google.cloud import vision
-from .handwriting_reader import HandwritingReader, ReadText
+from abstract_hw_reader import HandwritingReader, ReadText
 import logging
 import os
 
